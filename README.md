@@ -1,58 +1,72 @@
-Sales Data Analysis – SQL Project
-📌 Overview
-This project demonstrates how SQL can be used to clean, transform, and analyze sales data. Starting with a raw dataset (Online Sales Data.csv), the workflow includes data cleaning, preparing a new table (orders_clean), and executing multiple queries to extract valuable business insights. The final results are saved for further reporting or dashboard creation.
+# 📊 Sales Data Analysis – SQL Project
 
-📂 Repository Contents
-Online Sales Data.csv – Original dataset containing raw sales records.
+---
 
-Query1.png to Query9.png – Screenshots of SQL queries and their execution results.
+## 📌 Overview
+This project demonstrates how **SQL** can be used to clean, transform, and analyze sales data. Starting with a raw dataset (**Online Sales Data.csv**), the workflow includes **data cleaning**, preparing a new table (`orders_clean`), and executing multiple queries to extract valuable business insights.  
+The final results are saved for **further reporting** or **dashboard creation**.
 
-Task6 Sales_Analysis.sql – SQL script containing all queries in sequence for replication.
+---
 
-Task6 Results.csv – Final cleaned and aggregated results from SQL analysis.
+## 📂 Repository Contents
+- **Online Sales Data.csv** – Original dataset containing raw sales records.  
+- **Query1.png to Query9.png** – Screenshots of SQL queries and their execution results.  
+- **Task6 Sales_Analysis.sql** – SQL script containing all queries in sequence for replication.  
+- **Task6 Results.csv** – Final cleaned and aggregated results from SQL analysis.
 
-🛠️ Process Workflow
-Data Import – The CSV file is loaded into a database for SQL operations.
+---
 
-Data Cleaning –
+## 🛠️ Process Workflow
 
-Removed duplicates.
+**1. Data Import** – The CSV file is loaded into a database for SQL operations.  
 
-Handled missing values.
+**2. Data Cleaning** –  
+- Removed duplicates.  
+- Handled missing values.  
+- Extracted relevant fields (`Order Date`, `Amount`, `Product ID`, etc.).  
+- Created a cleaned table named `orders_clean`.  
 
-Extracted relevant fields (Order Date, Amount, Product ID, etc.).
+**3. Data Analysis Queries** –  
+- Monthly revenue calculations.  
+- Order counts by month.  
+- Insights on sales trends.  
 
-Created a cleaned table named orders_clean.
+**4. Result Export** – Saved cleaned and aggregated results as CSV for sharing or visualization.
 
-Data Analysis Queries –
+---
 
-Monthly revenue calculations.
+## 📊 Key Insights Obtained
+- Monthly total revenue and trends.  
+- Order count variations over time.  
+- Basis for creating dashboards in tools like **Tableau** or **Power BI**.
 
-Order counts by month.
+---
 
-Insights on sales trends.
+## ▶ How to Run This Project
+```bash
+# Step 1: Import the CSV file into your SQL database
+# Example for MySQL:
+LOAD DATA INFILE 'path_to/Online Sales Data.csv'
+INTO TABLE sales_data
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
 
-Result Export – Saved cleaned and aggregated results as CSV for sharing or visualization.
+# Step 2: Run the SQL script to clean the data and execute analysis queries
+SOURCE Task6 Sales_Analysis.sql;
 
-📊 Key Insights Obtained
-Monthly total revenue and trends.
+# Step 3: View results directly in your SQL editor or export them as CSV
+SELECT * FROM orders_clean;
+```
 
-Order count variations over time.
+---
 
-Basis for creating dashboards in tools like Tableau or Power BI.
+## 📌 Use Cases
+- Business decision-making and revenue forecasting.  
+- Data cleaning and preprocessing examples for beginners in SQL.  
+- Basis for building interactive dashboards.  
 
-▶ How to Run This Project
-Import Online Sales Data.csv into your SQL database.
+---
 
-Run Task6 Sales_Analysis.sql to clean the data and execute analysis queries.
-
-View results directly in your SQL editor or export them as CSV for further use.
-
-📌 Use Cases
-Business decision-making and revenue forecasting.
-
-Data cleaning and preprocessing examples for beginners in SQL.
-
-Basis for building interactive dashboards.
-
-Created by: PASHAM TEJASWINI
+**👩‍💻 Created by:** *PASHAM TEJASWINI* ✨
