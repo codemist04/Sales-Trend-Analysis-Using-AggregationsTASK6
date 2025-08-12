@@ -42,12 +42,10 @@ The final results are saved for **further reporting** or **dashboard creation**.
 
 ---
 
-## ▶ How to Run This Project
-
-# Step 1: Import the CSV file into your SQL database
-# Step 2: Run the SQL script to clean the data and execute analysis queries
-SOURCE Task6 Sales_Analysis.sql;
-# Step 3: View results directly in your SQL editor or export them as CSV
+## How to Run This Project
+- Step 1: Import the CSV file into your SQL database
+- Step 2: Run the SQL script to clean the data and execute analysis queries
+- Step 3: View results directly in your SQL editor or export them as CSV
 
 ---
 
